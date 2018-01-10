@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Title</title>
+    <meta name="viewport" content="width=device-width,height=device-height,minimum-scale=1,maximum-scale=1"/>
+    <link rel="stylesheet" href="css/custom.css" >
+    <link rel="stylesheet" href="css/jquery-original.min.css" >
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-mobile.min.js"></script>
+    <script src="js/loadContent.js"></script>
+    <script src="js/hide-loading.js"></script>
+</head>
+<body>
+  <!-- First Page -->
+  <div data-role="page" class="article" id="article1">
+    <div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+      <!-- Header -->
+      <h1>Menu</h1>
+      <a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop  " data-icon="gear" data-iconpos="notext"></a>
+
+        <div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+          <div data-role="header" data-theme="a">
+          <h1>Sign out?</h1>
+          </div>
+          <div role="main" class="ui-content">
+              <h3 class="ui-title">Are you sure you want to sign out?</p>
+              <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+              <p onclick="javascript:location.href='index.html'" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow">Sign out</p>
+          </div>
+      </div>
+    </div>
+    <!-- Content -->
+      <div class="box box-1" onclick="javascript:location.href='#article2'">
+        <h1><i class="fa fa-user-circle-o" aria-hidden="true"></i><span>Profile</span></h1>
+      </div>
+
+      <div class="box box-2" onclick="javascript:location.href='#article3'">
+        <h1><i class="fa fa-map-marker" aria-hidden="true"></i><span>Map</span></h1>
+      </div>
+
+
+      <div class="box box-3" onclick="javascript:location.href='#article4'">
+        <h1><i class="fa fa-cloud" aria-hidden="true"></i><span>Services</span></h1>
+      </div>
+
+      <div class="box box-4" onclick="javascript:location.href='#article5'">
+        <h1><i class="fa fa-users" aria-hidden="true"></i><span>About us</span></h1>
+      </div>
+
+      <div class="box box-5" onclick="javascript:location.href='#article6'">
+        <h1><i class="fa fa-cog" aria-hidden="true"></i><span>Settings</span></h1>
+      </div>
+
+      <div class="box box-6" onclick="javascript:location.href='#article7'">
+        <h1><i class="fa fa-question-circle-o" aria-hidden="true"></i><span>Help</span></h1>
+    </div>
+  </div>
+
+  <!-- Second Page -->
+  <div data-role="page"  class="article" id="article2">
+    <div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+      <!-- Header -->
+      <a href="#article1" data-icon="home" data-iconpos="notext"></a>
+      <h1>Profile</h1>
+    </div>
+    <!-- Edit Profile -->
+    <div id="profile-container">
+      <image id="profileImage" src="img/img-1.jpg" alt="add image" />
+    </div>
+    <p>Edit photo</p>
+      <form class="edit-info" method="#">
+        <input type="text" name="username" placeholder="&#x2709; Change username"/>
+        <input type="password" name="password" placeholder="&#9929; Enter new password" />
+        <input type="password" name="password" placeholder="&#9929; Enter new password" />
+        <input type="text" name="username" placeholder="&#x2709; Change email"/>
+        <button class="sub space" type="submit" onclick="javascript:location.href='http://localhost/mobileTemplate/menu.html'">Confirm</button>
+      </form>
+  </div>
+
+
+  <!-- Third Page -->
+  <div data-role="page"  class="article" id="article3">
+    <div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+      <!-- Header -->
+      <a href="#article1" data-icon="home" data-iconpos="notext"></a>
+      <h1>Map</h1>
+    </div>
+    <!-- Content -->
+    <div id="map" style="width:100%;height:100%;"></div>
+    <script src="js/googleMaps.js"></script>
+    </div>
+
+    <!-- Fourht Page -->
+    <div data-role="page"  class="article" id="article4">
+      <div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+        <!-- Header -->
+        <a href="#article1" data-icon="home" data-iconpos="notext"></a>
+        <h1>Services</h1>
+      </div>
+      <!-- Content -->
+        <div class="subscribtion sub-bronze">
+          <div class="title-sub">Bronze</div>
+          <div class="price">$<span>10.99</span>/Month</div>
+          <div class="sub-row"><span class="sub-offer">1</span><br> Montly Websites<br>Montly Mobile Apps<br>Montly Logo Design</div>
+          <div class="break"></div>
+          <div class="sub-row"><span class="sub-offer">100 MB</span><br> Available space</div>
+          <div class="break"></div>
+          <div class="sub-row"><span class="sub-offer">100 MB</span><br> Available space</div>
+          <div class="break"></div>
+          <div class="sub-row"><span class="sub-offer">100 MB</span><br> Available space</div>
+          <button>Subscribe</button>
+        </div>
+
+        <div class="subscribtion sub-silver">
+          <div class="title-sub">Bronze</div>
+          <div class="price">$<span>18.90</span>/Month</div>
+          <div class="sub-row"><span class="sub-offer">1</span><br> Montly Websites<br>Montly Mobile Apps<br>Montly Logo Design</div>
+          <div class="break"></div>
+          <div class="sub-row"><span class="sub-offer">100 MB</span><br> Available space</div>
+          <div class="break"></div>
+          <div class="sub-row"><span class="sub-offer">100 MB</span><br> Available space</div>
+          <div class="break"></div>
+          <div class="sub-row"><span class="sub-offer">100 MB</span><br> Available space</div>
+          <button>Subscribe</button>
+        </div>
+
+        <div class="subscribtion sub-gold">
+          <div class="title-sub">Bronze</div>
+          <div class="price">$<span>26.99</span>/Month</div>
+          <div class="sub-row"><span class="sub-offer">1</span><br> Montly Websites<br>Montly Mobile Apps<br>Montly Logo Design</div>
+          <div class="break"></div>
+          <div class="sub-row"><span class="sub-offer">100 MB</span><br> Available space</div>
+          <div class="break"></div>
+          <div class="sub-row"><span class="sub-offer">100 MB</span><br> Available space</div>
+          <div class="break"></div>
+          <div class="sub-row"><span class="sub-offer">100 MB</span><br> Available space</div>
+          <button>Subscribe</button>
+        </div>
+      </div>
+
+      <div data-role="page"  class="article" id="article5">
+        <div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+          <!-- Header -->
+          <a href="#article1" data-icon="home" data-iconpos="notext"></a>
+          <h1>About us</h1>
+        </div>
+        <!-- Content -->
+          <div class="sub-row">
+            <span class="sub-offer">- Our Story -</span>
+            <div id="profile-container">
+              <image id="profileImage" src="img/img-1.jpg" alt="add image" />
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div id="profile-container">
+              <image id="profileImage" src="img/img-1.jpg" alt="add image" />
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+
+        <div data-role="page"  class="article" id="article6">
+          <div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+            <!-- Header -->
+            <a href="#article1" data-icon="home" data-iconpos="notext"></a>
+            <h1>Settings</h1>
+          </div>
+          <!-- Content -->
+          <div class="maxl">
+            <label class="radio inline">
+              <input type="radio" name="sex" value="male" checked>
+              <span> Male </span>
+            </label>
+            <label class="radio inline">
+              <input type="radio" name="sex" value="female">
+              <span>Female </span>
+            </label>
+          </div>
+          
+        </div>
+
+
+
+    <script src="js/slide.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbE73dudC2LysqYDheW5AmUqW4OTjoF00&callback=myMap"></script>
+</body>
+</html>

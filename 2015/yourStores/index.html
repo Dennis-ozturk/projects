@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>YourStores</title>
+
+        <link rel="stylesheet" href="add/assets/todo.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="css/animate.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet">
+        <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+
+
+    </head>
+
+    <body class="well">
+
+      <header id="header-banner">
+          <nav class="navbar navbar-default navbar-fixed-top fadeIn" role="navigation">
+              <div class="container">
+
+                  <div class="navbar-header">
+                    <!--  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dropdown-box-1"> -->
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <div id="navbar-brand">
+                          <a style="text-decoration:none;" href="index.html">YourStores</a>
+                      </div>
+                  </div>
+<!--
+                  <div class="collapse navbar-collapse navbar-right" id="dropdown-box-1">
+                      <ul class="nav navbar-nav">
+                          <li><a href="index.html">YOUR STORES</a></li>
+                          <li><a href="aboutUs.html">CONTACT US</a></li>
+                          <li class="dropdown" role="presentation"></li>
+                      </ul>
+                  </div> -->
+              </div>
+          </nav>
+      </header>
+    <!--Inputs of Stores/Phone Number/Opening Hours-->
+    <div id="container" style="background-color: #f3f3f3">
+            <div class="task-list" style="margin-top:70px;">
+                <h3>Add a Store</h3>
+                <!--<button id="size" type="button"><a href="../index.html">&#10149;</a> </button> -->
+                <form id="todo-form">
+                    <input type="text" placeholder="Store name" style="height:40px; border-width:2px; border-radius:3px; text-align:center; font-size:18px;" />
+                    <p style="color:white;font-size:18px;margin-top:8px;">Opening-hour</p>
+                    <input type="time" name="time" style="height:40px; border-width:2px; border-radius:3px; text-align:center;  font-size:22px;" />
+                    <p style="color:white;font-size:18px; margin-top:8px;">Closing-hour</p>
+                    <input type="time" name="time" style="height:40px; border-width:2px; border-radius:3px; text-align:center;  font-size:22px;" />
+                    <input type="button" class="btn btn-primary" value="Add Store" onclick="todo.add();" />
+                </form>
+
+                <input type="button" class="btn btn-primary" value="Clear All" onclick="todo.clear();" />
+
+                <div id="delete-div">
+                    Drag Here to Delete
+                </div>
+            </div>
+
+            <div class="task-list task-container" id="pending">
+                <h3>Your Stores</h3>
+            </div>
+
+            <div style="clear:both;"></div>
+            <script type="text/javascript" src="add/lib/jQuery/jquery.min.js"></script>
+            <script type="text/javascript" src="add/lib/Bootstrap/bootstrap.min.js"></script>
+            <script type="text/javascript" src="add/lib/jQuery/jquery.ui.min.js"></script>
+            <script type="text/javascript" src="add/assets/todo.js"></script>
+
+
+        <!--Function that lets you choose and input stores-->
+            <script type="text/javascript">
+                $( "#datepicker" ).datepicker();
+                $( "#datepicker" ).datepicker("option", "dateFormat", "dd/mm/yy");
+
+                $(".task-container").droppable();
+                $(".todo-task").draggable({ revert: "valid", revertDuration:200 });
+                todo.init();
+            </script>
+        <!--End-->
+        </div>
+
+        <script src="js/slideshow.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/jquery.scrollTo.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>

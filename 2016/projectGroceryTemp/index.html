@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>title</title>
+  <link href="site/css/style.css" rel="stylesheet" type="text/css">
+  <link href="site/css/form.css" rel="stylesheet" type="text/css">
+  <link href="site/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- START HEADER -->
+  <ul class="navigation">
+    <div id="search-bar">
+      <img class="form" src="site/img/search.png" style="width:20px;height:20px;">
+      <div class="form">
+        <input type="text" placeholder="Search for groceries" name="uname" required>
+      </div>
+    </div>
+      <li class="nav-item"><a href="#">Home</a></li>
+      <li class="nav-item"><a href="#">Portfolio</a></li>
+      <li class="nav-item"><a href="#">About</a></li>
+      <li class="nav-item"><a href="#">Blog</a></li>
+      <li class="nav-item"><a href="#">Contact</a></li>
+  </ul>
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger"></label>
+
+  <!-- START MAIN CONTENT -->
+  <div class="site-wrap content">
+
+    <img id="cart" src="site/img/cart-finish.png">
+
+    <div class="main-content">
+      <h2>Grocery Stores</h2>
+      <p class="top">Check your local grocery stores and </br> other local information</p>
+
+      <!--LOGIN FORM ---------------------------------------------->
+      <button id="login" onclick="document.getElementById('id01').style.display='block'">LOGIN</button>
+      <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"><img style="width:35px;height:35px;" src="site/img/xButton.png"></span>
+            <h2 style="color:black;margin-top:15px;">LOGIN</h2>
+          </div>
+
+          <div class="container">
+            <!--Username input ---------------------->
+            <div>
+              <img class="form" src="site/img/name.png" style="width:32px;height:30px;">
+              <div class="form">
+                <input type="text" placeholder="Username" name="uname" required>
+              </div>
+            </div>
+            <!--Password input ---------------------->
+            <div>
+              <img class="form" src="site/img/pass.png" style="width:32px;height:30px;">
+              <div class="form">
+                <input type="password" placeholder="Password" name="psw" required>
+              </div>
+            </div>
+            <!--Login-button ------------------------>
+            <button class="login-button" type="submit">LOGIN</button>
+            <!--Remember me checkbox ---------------->
+            <div>
+              <input type="checkbox" checked="checked"><b> Remember me</b>
+            </div>
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+
+      <script>
+      var modal = document.getElementById('id01');
+
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+
+      <!--SIGN-UP FORM ---------------------------------------------->
+      <button id="sign-up" style="color:white;" onclick="document.getElementById('id02').style.display='block'">SIGN UP</button>
+      <div id="id02" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal"><img style="width:35px;height:35px;" src="site/img/xButton.png"></span>
+            <h2 style="color:black;margin-top:15px;">Sign Up</h2>
+          </div>
+
+          <div class="container">
+            <!--Full Name input ---------------------->
+            <div>
+              <img class="form" src="site/img/user.png" style="width:32px;height:30px;">
+              <div class="form">
+                <input type="text" placeholder="Full Name" name="uname" required>
+              </div>
+            </div>
+            <!--Username input ---------------------->
+            <div>
+              <img class="form" src="site/img/name.png" style="width:32px;height:30px;">
+              <div class="form">
+                <input type="text" placeholder="Username" name="uname" required>
+              </div>
+            </div>
+            <!--E-mail input ------------------------>
+            <div>
+              <img class="form" src="site/img/mail.png" style="width:32px;height:30px;">
+              <div class="form">
+                <input type="text" placeholder="E-mail" name="uname" required>
+              </div>
+            </div>
+            <!--Password input ---------------------->
+            <div>
+              <img class="form" src="site/img/pass.png" style="width:32px;height:30px;">
+              <div class="form">
+                <input type="password" placeholder="Password" name="psw" required>
+              </div>
+            </div>
+            <!--Login-button ------------------------>
+            <button class="login-button" type="submit">LOGIN</button>
+            <!--Remember me checkbox ---------------->
+            <div>
+              <input type="checkbox" checked="checked"><b> Remember me</b>
+            </div>
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+      <script>
+      var modal = document.getElementById('id02');
+
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+      <!--ABOUT THE APP ---------------------------------------------->
+      <button id="about-app"><a href="#">ABOUT THE APP</a></button>
+    </div>
+
+    <!-- START FOOTER -->
+    <footer>
+    </footer>
+  </div>
+
+</body>
+</html>

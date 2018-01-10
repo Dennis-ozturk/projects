@@ -1,0 +1,27 @@
+.postInfo{
+	max-width: 300px;
+	width: 100%;
+	background: #4aaee7;
+	color: white;
+	margin: 0% auto;
+	height: auto;
+	border-radius: 8px;
+}
+
+#topic{
+	margin: 10px;
+	padding: 20px;
+	width: 94%;
+	height: 20px;
+	border: 0px solid #4aaee7;
+}
+
+#about{
+	margin: 10px;
+	padding: 20px;
+	width: 94%;
+	height: 100px;
+	border: 0px solid #4aaee7;
+	margin-top: 20px;
+}
+

@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body, html {
+  height:100%;
+  width:100%;
+  margin:0;
+  padding:0;
+    font-family: 'Raleway',sans-serif;
+}
+body{
+  background-color: #f0f8ff;
+}
+
+h1,h4,h3,h2 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h2 {
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: gray;
+}
+
+
+
+
+/* -------------HEADER----------------------- */
+header {
+  width:100%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
+
+header ul {
+  text-align: center;
+}
+
+header li {
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    line-height: 3em;
+    font-size: 16px;
+    font-weight: bold;
+    padding:0 2em;
+    text-align: center;
+}
+header li:hover {
+    color: lightgray;
+}
+
+header h1 {
+    font-size:400%;
+    text-align: center;
+}
+.content-head-info h3 {
+     text-align: center;
+     font-size: 200%;
+   }
+
+/* ------------HEAD CONTENT--------------*/
+.content {
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    background: #120103;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(rgba(12,11,11,.82),rgba(12,11,11,.62)), url(../img/1.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-color: #333;
+}
+
+#half {
+  color: gray;
+}
+
+.btn-custom {
+    border-radius: 9px;
+    font-family: 'Raleway',sans-serif;
+    color: #fff;
+    font-size:1rem;
+    padding:.5rem 1rem;
+    border-radius: .25rem;
+    font-weight: 400;
+    margin-top: 50px;
+    text-decoration: none;
+}
+button {
+  background:#0275d8;
+  padding: 10px 30px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.btn-custom:hover {
+  background: rgb(44, 147, 226);
+}
+.content-head-info {
+  margin-top: 250px;
+}
+
+/* ------------PORTFOLIO CONTENT--------------*/
+.portfolio {
+    width:100%;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+    color: #fff;
+    text-align: center;
+    font-family:'Roboto',sans-serif;
+    background: #f0f8ff;
+}
+
+.portfolio h1 {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    font-size: 300%;
+    color: #000;
+    text-align: center;
+}
+
+.portfolio h3 {
+    text-align: center;
+    font-size: 150%;
+    color: #000;
+    font-family: 'Roboto',sans-serif;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.my-skills{
+    float: left;
+    margin: 2%;
+    margin-left: 22%;
+}
+.experience {
+    font-size: 18px;
+    text-align: center;
+    float: left;
+}
+.hide {
+    display: none;
+}
+.about {
+  padding: 5px;
+  width: 400px;
+  height: 250px;
+  margin-top: 5px;
+  color: white;
+  text-align: center;
+}
+
+.space {
+  margin-top: 1%;
+}
+
+#left {
+    float:left;
+  }
+
+#right {
+    float:right;
+}
+
+.project {
+  border: none;
+  background-color: rgb(255,255,255);
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.125);
+  border-image: initial;
+  margin-bottom: 30px;
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.16), 0 12px 20px 0 rgba(0,0,0,0.12);
+}
+.project img {
+  float: left;
+}
+img {
+  border-style: none;
+}
+
+.project h4 {
+  font-size: 125%;
+}
+
+.project h4, p {
+  width: 400px;
+  color: #000;
+}
+
+.btn {
+  border-radius: 9px;
+  font-family: 'Raleway',sans-serif;
+  color: #fff;
+  font-size:1rem;
+  padding:.5rem 1rem;
+  border-radius: .25rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.btn a {
+  color: #fff;
+  text-decoration: none;
+}
+.btn a:hover {
+  background: rgb(44, 147, 226);
+  text-decoration: none;
+}
+
+/* ------------INFORMATION CONTENT--------------*/
+
+.information {
+  width:100%;
+  height: auto;
+  overflow: hidden;
+  background: #120103;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(rgba(12,11,11,.82),rgba(12,11,11,.62)), url(../img/1.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  background-color: #333;
+}
+
+.circle {
+  width: 30px;
+  height: 60px;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+}
+
+.h1-text {
+  text-align: center;
+  padding: 10px 20px;
+  line-height: 1.5em;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.h1-under-text {
+  color: 	#A0A0A0;
+}
+
+.h1-under-italic {
+  font-style: italic;
+}
+/* ------------ABOUT CONTENT--------------*/
+.contact {
+  width:100%;
+  height: auto;
+  overflow: hidden;
+  color: #000;
+  text-align: center;
+  font-family:'Roboto',sans-serif;
+  background: #f0f8ff;
+  text-align: left;
+  margin-bottom: 5%;
+}
+
+.contact h1 {
+  font-family: 'Roboto',sans-serif;
+  font-weight: 300;
+  font-size: 300%;
+  color: #000;
+  text-align: center;
+}
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  margin-left: 2px;
+}
+.input-form{
+  display: block;
+  width: 60%;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #55595c;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border:1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  margin-bottom: 1rem;
+}
+.form-group {
+  display: block;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #55595c;
+  background-image: none;
+  background-clip: padding-box;
+  border-radius: .25rem;
+  margin-bottom: 1rem;
+  margin-left: 25%;
+}
+
+.submit-button {
+  margin-left: 25.5%;
+  margin-top: 0;
+}
+
+.form-group input{
+}
+
+.text-muted{
+  color: #818a91!important;
+}
+
+.form-text {
+  display: block;
+  margin-top: .25rem;
+}
+/* ------------FOOTER--------------*/
+.footer {
+  width: 100%;
+  height: 40px;
+  color: #000;
+}
+
+.footer p {
+  width: 100%;
+  text-align: center;
+}
+
+/* ------------MEDIA QUERY--------------*/
+@media screen and (max-width: 500px){
+  .project{
+      margin-left: 0;
+  }
+}
+
+@media screen and (max-height: 600px){
+  .content-head-info{
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1063px){
+  .my-skills{
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1595px){
+  .my-skills{
+    margin-left: 5%;
+  }
+}

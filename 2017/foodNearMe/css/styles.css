@@ -1,0 +1,144 @@
+@font-face{
+    font-family: firstFont;
+    src: url(font.ttf);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    }
+ul {
+    margin-top: 30px !important;
+}
+
+
+body {
+    font-family: firstFont;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: firstFont;
+}
+li {
+    list-style:none;
+    text-decoration: none;
+}
+
+#dispmap {
+        font-size: 16px;
+    font-family: firstFont;
+    border: transparent;
+    border-radius: 2px;
+    padding: 10px 10px 10px 10px;
+    background-color: 	#A34A00;
+    color:#fff;
+}
+
+#lnkNear {
+      font-family: firstFont;
+    border: transparent;
+    border-radius: 2px;
+    padding: 10px 10px 10px 10px;
+    background-color: 	#A34A00;
+    color:#fff;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+body>header {
+    background-color: #FD7F16; 
+    margin: 0px;
+    padding: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #61380E;
+    margin-bottom: 0;
+    font-size: 20.5pt;
+    font-weight: normal; 
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 17pt;
+    color: #A87A53;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #A87A53;
+    margin-bottom: 10px;
+}
+
+h3, #list p {
+    margin: 0;
+}
+
+#list p {
+    margin: 0;
+}
+
+#list li {
+    padding: 10px 10px;
+}
+
+#list li:nth-child(even) {
+    background-color: #EEE;
+}
+
+.distance {
+    float: right;
+    font-size: 15pt;
+    color: cadetblue;
+    margin-top: -40px;
+}
+
+main img {
+    max-width: 100%;
+}
+
+footer {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+#center{
+  list-style-type:none;
+  display:flex;
+  justify-content: center;
+}
+
+#center li {
+      margin-right: 10px;    
+}
+
+#center #dispmap #lnkNear{
+  display: list-item;
+  padding: 5px 10px;
+  margin: 0 3px;
+}

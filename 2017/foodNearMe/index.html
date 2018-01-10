@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FoodNearMe</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <script src="js/geo.js"></script>
+    <script src="js/script.js"></script>
+      <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbE73dudC2LysqYDheW5AmUqW4OTjoF00&callback=initMap">&callback=initMap">
+    </script>
+  </head>
+  <body>
+          <header>
+            <nav>
+             <img src="img/banner2.png" width="350" height="150" >
+              <ul id="center">
+                <li><a id="lnkNear" href="#">Near Me</a></li>
+              </ul>
+            </nav>
+          </header>
+
+          <main>
+            <div id="mapContainer">
+                <div id="map"></div>
+            </div>
+
+            <section id="lists">
+            <h2 id="listTitle">Loading...</h2>
+            <input type="text" id="searchText" placeholder="Search for a restaurant">
+            <script type="text/javascript" src="js/search.js"></script>
+            <ul id="list">
+            </ul>
+    </section>
+</main>
+  </body>
+</html>
